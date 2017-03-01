@@ -1,24 +1,25 @@
 package com.sastix.model;
 
 public class Email {
-    private String message;
-    private String address;
+    private String from;
+    private String to;
     private String subject;
+    private String message;
 
-    public String getMessage() {
-        return message;
+    public String getFrom() {
+        return from;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setFrom(String from) {
+        this.from = from;
     }
 
-    public String getAddress() {
-        return address;
+    public String getTo() {
+        return to;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setTo(String to) {
+        this.to = to;
     }
 
     public String getSubject() {
@@ -27,5 +28,13 @@ public class Email {
 
     public void setSubject(String subject) {
         this.subject = subject;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 }

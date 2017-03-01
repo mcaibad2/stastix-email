@@ -11,9 +11,11 @@
 </head>
 <body>
 <div class="container">
-    <h1>Result</h1>
-    <p th:text="'id: ' + ${email.message}" />
-    <a href="/greeting">Submit another message</a>
+    <h1>Email sent</h1>
+    <p th:text="'From: ' + ${email.from}" />
+    <p th:text="'To: ' + ${email.to}" />
+    <p th:text="'Subject: ' + ${email.subject}" />
+    <p th:text="'Message: ' + ${email.message}" />
 </div>
 </body>
 </html>

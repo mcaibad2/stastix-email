@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class EmailController {
 
-    @GetMapping("/email")
+    @GetMapping("/")
     public String emailForm(Model model) {
         model.addAttribute("email", new Email());
         return "email";
